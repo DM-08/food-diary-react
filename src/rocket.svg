@@ -1,0 +1,34 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="windowGradient" cx="10%" cy="10%" r="5%">
+      <stop offset="0%" stop-color="#5AC8FA"/>
+      <stop offset="100%" stop-color="#007AFF"/>
+    </radialGradient>
+    <linearGradient id="flameGradient" x1="0%" y1="0%" x2="0%" y2="10%">
+      <stop offset="0%" stop-color="#FFB74D"/>
+      <stop offset="100%" stop-color="#FF5722"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Rocket Body -->
+  <path d="M100 10 C 80 40, 80 90, 100 140 C 120 90, 120 40, 100 10 Z" fill="silver" stroke="black" stroke-width="2"/>
+  
+  <!-- Rocket Fins -->
+  <path d="M100 100 L50 140 Q40 160, 60 180 L90 150 Z" fill="red" stroke="black" stroke-width="2"/>
+  <path d="M100 100 L150 140 Q160 160, 140 180 L110 150 Z" fill="red" stroke="black" stroke-width="2"/>
+  
+  <!-- Rocket Nose -->
+  <polygon points="100,10 80,40 120,40" fill="red" stroke="black" stroke-width="2"/>
+  
+  <!-- Rocket Window -->
+  <circle cx="100" cy="60" r="12" fill="url(#windowGradient)" stroke="black" stroke-width="2"/>
+  
+  <!-- Rocket Flames -->
+  <polygon points="90,140 100,180 110,140" fill="url(#flameGradient)" stroke="black" stroke-width="2"/>
+  
+  <!-- Smoke Clouds -->
+  <circle cx="70" cy="190" r="10" fill="#E0E0E0"/>
+  <circle cx="90" cy="195" r="15" fill="#BDBDBD"/>
+  <circle cx="110" cy="195" r="15" fill="#BDBDBD"/>
+  <circle cx="130" cy="190" r="10" fill="#E0E0E0"/>
+</svg>
